@@ -3,8 +3,6 @@ const client = new Discord.Client();
 
 const config = require('./config.json')
 
-
-
 client.on('message', msg => {
     for (i in config.reactions) {
         if (msg.content === config.reactions[i].message) {
